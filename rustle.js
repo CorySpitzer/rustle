@@ -1,0 +1,1 @@
+Rustle = Ember.Application.create();
