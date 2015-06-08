@@ -1,5 +1,18 @@
 <h1>News</h1>
 
+<span class='horse-carousel'>
+  <button class="btn btn-info" {{action 'changePhoto'}}><span class="glyphicon glyphicon-chevron-left"></span></button>
+  {{#if image===1}}
+    <img id='1' src="http://tinyurl.com/pfj75rs" alt="horses" />
+  {{else if #image===2}}
+    <img id='2' src="http://media.nbcnewyork.com/images/620*349/484298019.jpg" alt="horse race" />
+  {{else}}
+    <img id='3' src="http://global.fncstatic.com/static/managed/img/fn-latino/sports/gutierrez%20crop.jpg" alt="horses racing" />
+  {{/if}}
+  <button class="btn btn-info" {{action 'changePhoto'}}><span class="glyphicon glyphicon-chevron-right"></span></button>
+</span>
+
+
 
 <div class="row">
   <div class="col-sm-3 col-md-3">

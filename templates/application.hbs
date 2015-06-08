@@ -6,5 +6,20 @@
       <li>{{#link-to 'entertainment'}}Entertainment{{/link-to}}</li>
     </ul>
   </nav>
-  {{outlet}}
+
+  <span class='horse-carousel'>
+    <button name="button"><span class="glyphicon glyphicon-chevron-left"></span></button>
+    {{if #image1}}
+      <img id='1' src="http://tinyurl.com/pfj75rs" alt="horses" />
+    {{else if #image2}}
+      <img id='2' src="http://media.nbcnewyork.com/images/620*349/484298019.jpg" alt="horse race" />
+    {{else}}
+      <img id='3' src="http://global.fncstatic.com/static/managed/img/fn-latino/sports/gutierrez%20crop.jpg" alt="horses racing" />
+    {{/if}}
+    <button name="button"><span class="glyphicon glyphicon-chevron-right"></span></button>
+  </span>
+
+  <div id="outlet-container">
+    {{outlet}}
+  </div>
 </div>
