@@ -1,3 +1,3 @@
-Rustle.AmericanPharoahControl = Ember.controller.extend({
-
-});
+// Rustle.AmericanPharoahController = Ember.Controller.extend({
+//   americanPharoahTitle: "American Pharoah"
+// });
